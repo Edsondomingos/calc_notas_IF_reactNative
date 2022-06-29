@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Text, View, StyleSheet, TextInput, Button, TouchableHighlight } from 'react-native';
-import Styles from '../assets/Styles'
+import Styles from '../assets/styles'
 
 let finall
 
@@ -64,7 +64,7 @@ export default function CalcSuperior(){
           <TextInput 
              style={Styles.input}
              value={final}
-            //  onChangeText={setFinal}
+             onChangeText={setFinal}
           />
 
           <TouchableHighlight 

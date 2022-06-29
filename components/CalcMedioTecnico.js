@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { Text, View, StyleSheet, TextInput, Button, TouchableHighlight } from 'react-native';
-import Styles from '../assets/Styles'
+import Styles from '../assets/styles'
 
 let finall
 
@@ -49,7 +49,7 @@ export default function CalcSuperior(){
 
   return (
     <View>
-        <Text style={Styles.titulo}>Calculadora de Notas Medio/Técnico</Text>
+        <Text style={Styles.titulo}>Calculadora de Notas Medio/Tï¿½cnico</Text>
         <View style={Styles.ContainerNotas}>
           <Text style={Styles.textoNotas}>N1</Text>
           <TextInput 
