@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
   container:{
     flex: 1,
-    backgroundColor: ''
+    backgroundColor: '',
   },
   opcao:{
     width: 200,
@@ -24,8 +24,9 @@ export default StyleSheet.create({
   titulo:{
     textAlign: 'center',
     fontSize: 30,
-    fontFamily: 'Arial',
-    
+    fontFamily: 'Cursive',
+    fontWeight: 'bolder',
+    marginVertical: 20,
   },
   ContainerNotas:{
     display: 'flex',
@@ -44,6 +45,7 @@ export default StyleSheet.create({
     width: 200,
     margin: 'auto',
     padding: 5,
+    borderRadius: 7,
   },
   btCalcular:{    
     backgroundColor: '#21AEEF',

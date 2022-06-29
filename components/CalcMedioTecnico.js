@@ -8,21 +8,28 @@ let finall
 export default function CalcSuperior(){
   const [nota1, setNota1] = useState('')
   const [nota2, setNota2] = useState('')
+  const [nota3, setNota3] = useState('')
+  const [nota4, setNota4] = useState('')
   const [final, setFinal] = useState()
   const [resultado, setResultado] = useState()
   
   const Calcular = () => {
     let n1 = parseFloat(nota1)
     let n2 = parseFloat(nota2)
+    let n3 = parseFloat(nota3)
+    let n4 = parseFloat(nota4)
+
     if(nota1.length == 0){
       setResultado('Digite pelo menos a primeira nota')
     }
-    if(nota1.length != 0 && nota2.length == 0){
-      // finall = (((n1 * 2)/60)*3)*5
-      // finall = (((300 - n1)/3)/2)
-      finall = (((300 - (n1*2))/3))
+
+    if(nota1.length != 0 && nota2.length == 0 &&
+      nota3.length == 0 && nota4.length == 0
+    ){
+      finall = (((600 - (n1*2))/2)/3)/3
       setNota2(finall)
-    } 
+    }
+
     if (nota1.length != 0 && nota2.length != 0){
       finall = ((n1 * 2) + (n2 * 3)) / 5
       if(finall < 60){
@@ -42,7 +49,7 @@ export default function CalcSuperior(){
 
   return (
     <View>
-        <Text style={Styles.titulo}>Calculadora de Notas cursos Superiores</Text>
+        <Text style={Styles.titulo}>Calculadora de Notas Medio/Técnico</Text>
         <View style={Styles.ContainerNotas}>
           <Text style={Styles.textoNotas}>N1</Text>
           <TextInput 
@@ -58,6 +65,22 @@ export default function CalcSuperior(){
              placeholder='Digite a segunda nota'
              value={nota2}
              onChangeText={setNota2}
+          />
+
+          <Text style={Styles.textoNotas}>N3</Text>
+          <TextInput 
+             style={Styles.input}
+             placeholder='Digite a terceira nota'
+             value={nota3}
+             onChangeText={setNota3}
+          />
+
+          <Text style={Styles.textoNotas}>N4</Text>
+          <TextInput 
+             style={Styles.input}
+             placeholder='Digite a quarta nota'
+             value={nota4}
+             onChangeText={setNota4}
           />
 
           <Text style={Styles.textoNotas}>FINAL</Text>
