@@ -43,13 +43,13 @@ return (
     </View>
     <View>
       <Text>Digite a nota:</Text>
-      <TextInput value={nota1} placeholder='Nota 1' onChangeText={nota1SetNumero}/>
+      <TextInput placeholder='Nota 1' onChangeText={nota1SetNumero}/>
       <Text>Digite a nota:</Text>
-      <TextInput value={nota2} placeholder='Nota 2' onChangeText={nota2SetNumero}/>
+      <TextInput placeholder='Nota 2' onChangeText={nota2SetNumero}/>
       <Text>Digite a nota:</Text>
-      <TextInput value={nota3} placeholder='Nota 3' onChangeText={nota3SetNumero}/>
+      <TextInput placeholder='Nota 3' onChangeText={nota3SetNumero}/>
       <Text>Digite a nota:</Text>
-      <TextInput value={nota4} placeholder='Nota 4' onChangeText={nota4SetNumero}/>
+      <TextInput placeholder='Nota 4' onChangeText={nota4SetNumero}/>
       
       <TextInput placeholder='falta' value={notafinal2} onChangeText={finalsetNumero} />
         
