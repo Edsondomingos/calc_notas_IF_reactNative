@@ -11,11 +11,9 @@ const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    // <CalcMedioTecnico />
-    // <Home />
     <NavigationContainer>
       <Stack.Navigator  initialRouteName='Home' >
-        <Stack.Screen name='Home' component={Home} />
+        <Stack.Screen name='Bem vindo !' component={Home} />
         <Stack.Screen name='CalcMedioTecnico' component={CalcMedioTecnico} />
         <Stack.Screen name='CalcSuperior' component={CalcSuperior} />
         <Stack.Screen name='Sobre' component={Sobre} />

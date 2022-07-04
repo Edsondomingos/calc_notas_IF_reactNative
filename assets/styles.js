@@ -3,15 +3,17 @@ import { StyleSheet } from 'react-native'
 export default StyleSheet.create({
   container:{
     flex: 1,
-    backgroundColor: '',
+    backgroundColor: '#fff',
+    alignItems: 'center',
   },
   opcao:{
     width: 200,
-    height: 40,
+    height: 70,
     marginVertical: 30,
     margin: 'auto',
-    backgroundColor: '#88f',
-    borderRadius: 20,
+    backgroundColor: '#f05',
+    borderBottomEndRadius: 20,
+    borderTopEndRadius: 20,
     padding: 10,
     borderWidth: 1,
     alignItems: 'center',
@@ -20,6 +22,8 @@ export default StyleSheet.create({
   textoOpcao:{
     fontSize: 20,
     fontWeight: 'bold',
+    color: '#fff',
+    fontFamily: 'Cursive'
   },
   titulo:{
     textAlign: 'center',
@@ -32,6 +36,7 @@ export default StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#fff'
   },
   textoNotas:{
     textAlign: 'center', 
@@ -47,16 +52,31 @@ export default StyleSheet.create({
     padding: 5,
     borderRadius: 7,
   },
+  botoes:{
+    flexDirection: 'row',
+  },
   btCalcular:{    
     backgroundColor: '#21AEEF',
-    width: 200,
-    height: 40,
+    width: 120,
+    height: 45,
     borderRadius: 20,
+    marginVertical: 20,
+    marginHorizontal: 10
   },
   textoBt:{
     textAlign: 'center',
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: 'bold',
     color: '#fff'
+  },
+  resultado:{
+    color: '#f00',
+    fontSize: 25,
+    marginVertical: 10,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  logo:{
+    marginHorizontal:'auto',
   },
 })

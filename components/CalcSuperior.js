@@ -12,36 +12,52 @@ export default function CalcSuperior(){
   const [resultado, setResultado] = useState()
   
   const Calcular = () => {
-    let n1 = parseFloat(nota1)
-    let n2 = parseFloat(nota2)
+    let n1 = nota1
+    let n2 = nota2
     if(nota1.length == 0){
       setResultado('Digite pelo menos a primeira nota')
     }
     if(nota1.length != 0 && nota2.length == 0){
-      // finall = (((n1 * 2)/60)*3)*5
-      // finall = (((300 - n1)/3)/2)
       finall = (((300 - (n1*2))/3))
       setNota2(finall)
+      setResultado(`
+      Calculo da média \n(${nota1.toFixed(2)} + ${finall.toFixed(2)}) / 5 = 60`)
     } 
     if (nota1.length != 0 && nota2.length != 0){
       finall = ((n1 * 2) + (n2 * 3)) / 5
-      if(finall < 60){
+      if(finall > 20 && finall < 60){
         if(nota1 > nota2){
           finall = (((300 - (n1*2))/3))
           setFinal(finall)
+          setResultado(`
+          Voce precisa tirar: \n ${finall.toFixed(2)} na prova final`)
         } else if(nota2 > nota1){
           finall = (((300 - (n2*3))/2))
           setFinal(finall)
+          setResultado(`
+          Voce precisa tirar: \n ${finall.toFixed(2)} para ser aprovado`)
+        } else {
+          setResultado(`Você precisa tirar:\n ${120-finall.toFixed(2)} na prova final`)
         }
+      } else if(finall < 20){
+        setResultado(`Reprovado por média: ${finall.toFixed(2)}`)
+      } else if(finall >= 60){
+      setResultado(`APROVADO \nSua média foi: ${finall.toFixed(2)}`)
       }
-      // setResultado(finall)
     }
     
   }
 
+  function Limpar(){
+    setNota1('')
+    setNota2('')
+    setFinal('')
+    setResultado('')
+  }
+
 
   return (
-    <View>
+    <View style={Styles.container}>
         <Text style={Styles.titulo}>Calculadora de Notas cursos Superiores</Text>
         <View style={Styles.ContainerNotas}>
           <Text style={Styles.textoNotas}>N1</Text>
@@ -67,14 +83,24 @@ export default function CalcSuperior(){
              onChangeText={setFinal}
           />
 
-          <TouchableHighlight 
-            style={Styles.btCalcular}
-            onPress={() => Calcular()}
-          >
-            <Text style={Styles.textoBt}>Calcular</Text>
-          </TouchableHighlight>
+          <View style={Styles.botoes}>
+            <TouchableHighlight 
+                style={Styles.btCalcular}
+                onPress={() => Limpar()}
+              >
+                <Text style={Styles.textoBt}>Limpar</Text>
+              </TouchableHighlight>
 
-          <Text>{resultado}</Text>
+              <TouchableHighlight 
+                style={Styles.btCalcular}
+                onPress={() => Calcular()}
+              >
+                <Text style={Styles.textoBt}>Calcular</Text>
+              </TouchableHighlight>
+
+            
+          </View>
+          <Text style={Styles.resultado}>{resultado}</Text>
         
         </View>
     </View>

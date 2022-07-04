@@ -1,55 +1,112 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { Text, View, StyleSheet, TextInput, Button, TouchableHighlight } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button, TouchableHighlight, ScrollView } from 'react-native';
 import Styles from '../assets/styles'
 
 let finall
+let media
+let media1
+let media2
+let mediaFinal
+let mdf1
+let mdf2
+let mdf3
 
 export default function CalcSuperior(){
   const [nota1, setNota1] = useState('')
   const [nota2, setNota2] = useState('')
   const [nota3, setNota3] = useState('')
   const [nota4, setNota4] = useState('')
-  const [final, setFinal] = useState()
+  const [final, setFinal] = useState('')
   const [resultado, setResultado] = useState()
   
   const Calcular = () => {
-    let n1 = parseFloat(nota1)
-    let n2 = parseFloat(nota2)
-    let n3 = parseFloat(nota3)
-    let n4 = parseFloat(nota4)
-
+    let n1 = nota1
+    let n2 = nota2
+    let n3 = nota3
+    let n4 = nota4
+    media1 = ((n1 * 2) + (n2 * 2)) 
+    // media1 = (240 - (nota1*2))/2 
+    // Se estiver sem nota1
     if(nota1.length == 0){
       setResultado('Digite pelo menos a primeira nota')
-    }
+    } //else {    
+      // Se estiver apenas coma primeira nota
+      if(nota1.length != 0 && nota2.length == 0 &&
+        nota3.length == 0 && nota4.length == 0
+      ){        
+        setNota2((240 - (nota1*2))/2)
+        // setNota3(400/6*3)
+        setNota3(60)
+        // setNota3(((media1)*3)) 
+        // 1000/10*3-media1
+        // ((n1*2 + n2*2)/10)*3
+        // setNota3((((400 - media1)/60)*3))
+        setNota4(((360 - (nota3*3))/3)/2)
+        // if(nota3.length == 0 && nota4.length == 0){
 
-    if(nota1.length != 0 && nota2.length == 0 &&
-      nota3.length == 0 && nota4.length == 0
-    ){
-      finall = (((600 - (n1*2))/2)/3)/3
-      setNota2(finall)
-    }
-
-    if (nota1.length != 0 && nota2.length != 0){
-      finall = ((n1 * 2) + (n2 * 3)) / 5
-      if(finall < 60){
-        if(nota1 > nota2){
-          finall = (((300 - (n1*2))/3))
-          setFinal(finall)
-        } else if(nota2 > nota1){
-          finall = (((300 - (n2*3))/2))
-          setFinal(finall)
-        }
+        // }
+      } else if(nota1.length != 0 && nota2.length != 0 &&
+        nota3.length == 0 && nota4.length == 0){
+          setNota3(((media1*4) - 360)/10)
+          setNota4(((360 - (nota3*3))/3)/2)
+      } else if(nota1.length != 0 && nota2.length != 0 &&
+        nota3.length != 0 && nota4.length == 0){
+          setNota4(((360 - (nota3*3))/3)/2)
+          // setNota4((((400- (media1+nota3))*3)/10)*2)
       }
-      // setResultado(finall)
-    }
-    
+
+       if (nota1.length != 0 && nota2.length != 0 &&
+          nota3.length != 0 && nota4.length != 0){
+          
+          media2 = ((nota3 * 3) + (nota4 *3)) 
+          mediaFinal = (media1 + media2) / 10
+          // mediaFinal = ((n1 * 2) + (n2 * 2) + (nota3 * 3) + (nota4 *3)) /10
+        if(mediaFinal > 20 && mediaFinal < 60){
+          if(media1 < 60){
+            // finall = (((300 - (n1*2))/3))
+            // setFinal(finall)
+            media2
+            mdf2 = ('NAF'*2 + (media2 * 3)) / 10
+            setResultado('Aprovado com media: '+ mdf2)
+          } else if(media2 < 60){
+            mdf3 = ((2 * media1) + (3 * 'NAF')) / 10
+            setResultado('Aprovado com media: '+ mdf3)
+          } else {
+            mdf1 = (mediaFinal + 'NAF') / 2
+            setResultado('Aprovado com media: '+ mdf1)
+          }
+          setFinal(mediaFinal)
+          setResultado()
+        } else if(mediaFinal < 20){
+          setResultado('Reprovado por media: '+ mediaFinal)
+          setFinal()
+        } else {
+          setResultado('Aprovado com media: '+ mediaFinal)
+          setFinal()
+        }      
+      }
+      // setResultado((((media2*3)-720)/2))
+    //}
   }
 
+  function Limpar(){
+    setNota1('')
+    setNota2('')
+    setNota3('')
+    setNota4('')
+    setFinal('')
+    setResultado('')
+  }
 
   return (
-    <View>
-        <Text style={Styles.titulo}>Calculadora de Notas Medio/T�cnico</Text>
+    <View style={Styles.container}>
+      <ScrollView>
+        <Text style={Styles.titulo}>Calculadora de Notas Medio/Técnico</Text>
+
+        
+        <Text>{resultado}</Text>
+
         <View style={Styles.ContainerNotas}>
           <Text style={Styles.textoNotas}>N1</Text>
           <TextInput 
@@ -87,7 +144,7 @@ export default function CalcSuperior(){
           <TextInput 
              style={Styles.input}
              value={final}
-            //  onChangeText={setFinal}
+             onChangeText={setFinal}
           />
 
           <TouchableHighlight 
@@ -97,9 +154,17 @@ export default function CalcSuperior(){
             <Text style={Styles.textoBt}>Calcular</Text>
           </TouchableHighlight>
 
+          <TouchableHighlight 
+            style={Styles.btCalcular}
+            onPress={() => Limpar()}
+          >
+            <Text style={Styles.textoBt}>Limpar</Text>
+          </TouchableHighlight>
+
           <Text>{resultado}</Text>
         
         </View>
+        </ScrollView>
     </View>
   )
 }
