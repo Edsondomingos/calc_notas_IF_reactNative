@@ -6,7 +6,7 @@ import Styles from '../assets/styles'
 export default function Home(props){
   return (
     <View style={Styles.container}>
-      <Image source={require('../assets/if.png')}  style={Styles.logo} />
+      {/*<Image source={require('../assets/if.png')}  style={Styles.logo} /> */}
       <Text style={Styles.titulo}>Calculadora de notas</Text>
       <TouchableHighlight
         style={Styles.opcao}
