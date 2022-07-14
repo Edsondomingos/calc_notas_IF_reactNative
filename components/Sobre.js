@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+//import { useState } from 'react';
 import { Text, View, StyleSheet, TouchableHighlight } from 'react-native';
 import Styles from '../assets/styleSobre'
 

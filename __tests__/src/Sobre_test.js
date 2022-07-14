@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react-native";
-import Sobre from '../../../components/Sobre'
+import Sobre from '../../components/Sobre'
 jest.mock("react-native/Libraries/Animated/NativeAnimatedHelper");
 
 describe("Teste de inicialização e Exibição", ()=>{

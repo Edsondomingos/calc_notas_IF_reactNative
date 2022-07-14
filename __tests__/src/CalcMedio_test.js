@@ -1,5 +1,5 @@
 import { render, fireEvent } from "@testing-library/react-native";
-import CalcMedioTecnico from '../../../components/CalcMedioTecnico'
+import CalcMedioTecnico from '../../components/CalcMedioTecnico'
 jest.mock("react-native/Libraries/Animated/NativeAnimatedHelper");
 
 describe("Teste de inicialização e Exibição", ()=>{
