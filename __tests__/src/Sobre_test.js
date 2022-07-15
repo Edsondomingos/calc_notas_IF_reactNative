@@ -14,6 +14,9 @@ describe("Teste de inicialização e Exibição", ()=>{
     it("Component view na Sobre", ()=>{
         const { getByText, getByTestId } = render(<Sobre />);
 
+        const textoInicial = getByText('Bem vindo a calculadora de notas do IFRN');
+        expect(textoInicial).toBeDefined();
+
         expect(getByText("Bem vindo a calculadora de notas do IFRN")).toBeTruthy();
         expect(getByTestId("btnview")).toBeTruthy();
     })
