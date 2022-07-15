@@ -105,15 +105,16 @@ export default function CalcSuperior(){
         <Text style={Styles.titulo}>Calculadora de Notas Medio/Técnico</Text>
 
         
-        <Text>{resultado}</Text>
+        <Text testID='btn'>{resultado}</Text>
 
-        <View style={Styles.ContainerNotas}>
-          <Text style={Styles.textoNotas}>N1</Text>
+        <View style={Styles.ContainerNotas} testID='btn1'>
+          <Text style={Styles.textoNotas} testID='btn2'>N1</Text>
           <TextInput 
             style={Styles.input} 
             placeholder='Digite a primeira nota' 
             value={nota1} 
-            onChangeText={setNota1}  
+            onChangeText={setNota1} 
+            testID='btn3' 
           />
 
           <Text style={Styles.textoNotas}>N2</Text>

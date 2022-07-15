@@ -16,14 +16,21 @@ describe("Teste de inicialização e Exibição", ()=>{
 
         expect(getByText("Calculadora de Notas Medio/Técnico")).toBeTruthy();
         expect(getByTestId("teste1")).toBeTruthy();
+        expect(getByTestId("btn")).toBeTruthy();
+        expect(getByTestId("btn1")).toBeTruthy();
+        expect(getByTestId("btn2")).toBeTruthy();
+        expect(getByTestId("btn3")).toBeTruthy();
     })
 })
 describe("Teste de Navegação", ()=>{
     it("Navegação botão calcular", ()=>{
         const { getByText, getByTestId } = render(<CalcMedioTecnico />);
 
-        const botao = getByTestId("teste2");
-        fireEvent.press(botao);
+        const botao1 = getByTestId("teste2");
+        fireEvent.press(botao1);
+
+        const botao2 = getByTestId("teste3");
+        fireEvent.press(botao2);
 
         expect(getByText("Calculadora de Notas Medio/Técnico")).toBeTruthy();
     })
