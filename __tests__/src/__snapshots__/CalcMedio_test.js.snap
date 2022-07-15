@@ -64,6 +64,7 @@ exports[`Teste de Snapshot Snapshot de CalcMedio 1`] = `
               "width": 200,
             }
           }
+          testID="btn3"
           value=""
         />
         <Text

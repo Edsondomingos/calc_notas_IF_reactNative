@@ -113,7 +113,8 @@ export default function CalcSuperior(){
             style={Styles.input} 
             placeholder='Digite a primeira nota' 
             value={nota1} 
-            onChangeText={setNota1}  
+            onChangeText={setNota1} 
+            testID='btn3' 
           />
 
           <Text style={Styles.textoNotas}>N2</Text>
