@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontFamily": "Cursive",
+        "fontSize": 30,
+        "fontWeight": "bold",
+        "marginVertical": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    Calculadora de Notas cursos Superiores
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#fff",
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      N1
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Digite a primeira nota"
+      style={
+        Object {
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "margin": "auto",
+          "marginBottom": 20,
+          "padding": 5,
+          "width": 200,
+        }
+      }
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      N2
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      placeholder="Digite a segunda nota"
+      style={
+        Object {
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "margin": "auto",
+          "marginBottom": 20,
+          "padding": 5,
+          "width": 200,
+        }
+      }
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "textAlign": "center",
+        }
+      }
+    >
+      FINAL
+    </Text>
+    <TextInput
+      onChangeText={[Function]}
+      style={
+        Object {
+          "borderRadius": 7,
+          "borderWidth": 1,
+          "margin": "auto",
+          "marginBottom": 20,
+          "padding": 5,
+          "width": 200,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#21AEEF",
+            "borderRadius": 20,
+            "height": 45,
+            "marginHorizontal": 10,
+            "marginVertical": 20,
+            "width": 120,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": 25,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            }
+          }
+        >
+          Limpar
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#21AEEF",
+            "borderRadius": 20,
+            "height": 45,
+            "marginHorizontal": 10,
+            "marginVertical": 20,
+            "width": 120,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": 25,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            }
+          }
+        >
+          Calcular
+        </Text>
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#f00",
+          "fontSize": 25,
+          "fontWeight": "bold",
+          "marginVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    />
+  </View>
+</View>
+`;

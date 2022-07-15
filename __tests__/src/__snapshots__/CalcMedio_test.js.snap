@@ -216,6 +216,7 @@ exports[`Teste de Snapshot Snapshot de CalcMedio 1`] = `
               "width": 120,
             }
           }
+          testID="teste3"
         >
           <Text
             style={

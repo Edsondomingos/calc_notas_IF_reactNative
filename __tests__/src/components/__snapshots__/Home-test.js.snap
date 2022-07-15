@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teste de snapshot Snapshot da tela Home 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Object {
+        "marginHorizontal": "auto",
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "fontFamily": "Cursive",
+        "fontSize": 30,
+        "fontWeight": "bold",
+        "marginVertical": 20,
+        "textAlign": "center",
+      }
+    }
+  >
+    Calculadora de notas
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#f05",
+        "borderBottomEndRadius": 20,
+        "borderTopEndRadius": 20,
+        "borderWidth": 1,
+        "height": 70,
+        "justifyContent": "center",
+        "margin": "auto",
+        "marginVertical": 30,
+        "padding": 10,
+        "width": 200,
+      }
+    }
+    testID="btnTelaCalcMedio"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "Cursive",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Médio➗Técnico
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#f05",
+        "borderBottomEndRadius": 20,
+        "borderTopEndRadius": 20,
+        "borderWidth": 1,
+        "height": 70,
+        "justifyContent": "center",
+        "margin": "auto",
+        "marginVertical": 30,
+        "padding": 10,
+        "width": 200,
+      }
+    }
+    testID="btnTelaCalcSuperior"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "Cursive",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      ➕Superior
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#f05",
+        "borderBottomEndRadius": 20,
+        "borderTopEndRadius": 20,
+        "borderWidth": 1,
+        "height": 70,
+        "justifyContent": "center",
+        "margin": "auto",
+        "marginVertical": 30,
+        "padding": 10,
+        "width": 200,
+      }
+    }
+    testID="btnTelaSobre"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontFamily": "Cursive",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      ❕Sobre
+    </Text>
+  </View>
+</View>
+`;

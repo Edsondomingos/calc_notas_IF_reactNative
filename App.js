@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from './components/Home'
@@ -13,7 +12,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator  initialRouteName='Home' >
-        <Stack.Screen name='Bem vindo !' component={Home} />
+        <Stack.Screen name='Home' component={Home} />
         <Stack.Screen name='CalcMedioTecnico' component={CalcMedioTecnico} />
         <Stack.Screen name='CalcSuperior' component={CalcSuperior} />
         <Stack.Screen name='Sobre' component={Sobre} />
