@@ -17,6 +17,7 @@ exports[`Teste de Snapshot Snapshot de Sobre 1`] = `
         "marginVertical": 10,
       }
     }
+    testID="btntext"
   >
     Bem vindo a calculadora de notas do IFRN
   </Text>
@@ -30,6 +31,7 @@ exports[`Teste de Snapshot Snapshot de Sobre 1`] = `
         "marginVertical": 10,
       }
     }
+    testID="btntext1"
   >
     Caso esteja no ensino medio ou tecnico, possuindo 4 notas, a duas primeiras notas tem peso 2 e as duas ultimas peso 3. Com a soma das notas depois do calculo do peso, dividido pelo peso total, que no caso seria a soma de todos os pesos, resultando em 10, ou seja:
   </Text>
@@ -40,6 +42,7 @@ exports[`Teste de Snapshot Snapshot de Sobre 1`] = `
         "marginVertical": 10,
       }
     }
+    testID="btntext2"
   >
     ((B1 * 2) + (B2 * 2) + (B3 * 3) + (B4 * 3)) / 10
   </Text>
@@ -50,6 +53,7 @@ exports[`Teste de Snapshot Snapshot de Sobre 1`] = `
         "marginVertical": 10,
       }
     }
+    testID="btntext3"
   >
     Para os cursos superiores, segue a mesma lógica, mas com apenas duas notas bimestrais, com peso total de 5, ou seja:
   </Text>
@@ -60,6 +64,7 @@ exports[`Teste de Snapshot Snapshot de Sobre 1`] = `
         "marginVertical": 10,
       }
     }
+    testID="btntext4"
   >
     ((B1 * 2) + (B2 * 3)) / 5 
   </Text>

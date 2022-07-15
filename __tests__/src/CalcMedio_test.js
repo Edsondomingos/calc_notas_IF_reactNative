@@ -16,6 +16,9 @@ describe("Teste de inicialização e Exibição", ()=>{
 
         expect(getByText("Calculadora de Notas Medio/Técnico")).toBeTruthy();
         expect(getByTestId("teste1")).toBeTruthy();
+        expect(getByTestId("btn")).toBeTruthy();
+        expect(getByTestId("btn1")).toBeTruthy();
+        expect(getByTestId("btn2")).toBeTruthy();
     })
 })
 describe("Teste de Navegação", ()=>{
