@@ -100,7 +100,7 @@ export default function CalcSuperior(){
   }
 
   return (
-    <View style={Styles.container} testID='btn1'>
+    <View style={Styles.container} testID='teste1'>
       <ScrollView>
         <Text style={Styles.titulo}>Calculadora de Notas Medio/Técnico</Text>
 
@@ -149,14 +149,16 @@ export default function CalcSuperior(){
 
           <TouchableHighlight 
             style={Styles.btCalcular}
-            onPress={() => Calcular()} testID='btn2'
+            onPress={() => Calcular()} 
+            testID='teste2'
           >
             <Text style={Styles.textoBt}>Calcular</Text>
           </TouchableHighlight>
 
           <TouchableHighlight 
             style={Styles.btCalcular}
-            onPress={() => Limpar()}
+            onPress={() => Limpar()} 
+            testID='teste3'
           >
             <Text style={Styles.textoBt}>Limpar</Text>
           </TouchableHighlight>
