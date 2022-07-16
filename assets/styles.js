@@ -29,7 +29,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontSize: 30,
     fontFamily: 'Cursive',
-    fontWeight: 'bolder',
+    fontWeight: 'bold',
     marginVertical: 20,
   },
   ContainerNotas:{
@@ -44,7 +44,7 @@ export default StyleSheet.create({
 
   },
   input:{
-    outline: 0,
+    //outline: 0,
     borderWidth: 1,
     marginBottom: 20,
     width: 200,

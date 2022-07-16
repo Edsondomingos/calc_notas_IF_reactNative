@@ -100,24 +100,25 @@ export default function CalcSuperior(){
   }
 
   return (
-    <View style={Styles.container}>
+    <View style={Styles.container} testID='teste1'>
       <ScrollView>
         <Text style={Styles.titulo}>Calculadora de Notas Medio/Técnico</Text>
 
         
-        <Text testID='btnIndex'>{resultado}</Text>
+        <Text testID='btn'>{resultado}</Text>
 
-        <View style={Styles.ContainerNotas}>
-          <Text style={Styles.textoNotas}>N1</Text>
+        <View style={Styles.ContainerNotas} testID='btn1'>
+          <Text style={Styles.textoNotas} testID='btn2'>N1</Text>
           <TextInput 
-            style={Styles.input}
-            placeholder='Digite a primeira nota'
-            value={nota1}
-            onChangeText={setNota1}
+            style={Styles.input} 
+            placeholder='Digite a primeira nota' 
+            value={nota1} 
+            onChangeText={setNota1} 
+            testID='btn3' 
           />
 
           <Text style={Styles.textoNotas}>N2</Text>
-          <TextInput 
+          <TextInput
              style={Styles.input}
              placeholder='Digite a segunda nota'
              value={nota2}
@@ -149,14 +150,16 @@ export default function CalcSuperior(){
 
           <TouchableHighlight 
             style={Styles.btCalcular}
-            onPress={() => Calcular()}
+            onPress={() => Calcular()} 
+            testID='teste2'
           >
             <Text style={Styles.textoBt}>Calcular</Text>
           </TouchableHighlight>
 
           <TouchableHighlight 
             style={Styles.btCalcular}
-            onPress={() => Limpar()}
+            onPress={() => Limpar()} 
+            testID='teste3'
           >
             <Text style={Styles.textoBt}>Limpar</Text>
           </TouchableHighlight>
