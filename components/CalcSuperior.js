@@ -19,7 +19,7 @@ export default function CalcSuperior(){
     }
     if(nota1.length != 0 && nota2.length == 0){
       finall = (((300 - (n1*2))/3))
-      setNota2(finall)
+      setNota2(finall.toFixed(2))
       setResultado(`
       Calculo da média \n(${nota1.toFixed(2)} + ${finall.toFixed(2)}) / 5 = 60`)
     } 
@@ -66,6 +66,7 @@ export default function CalcSuperior(){
             placeholder='Digite a primeira nota'
             value={nota1}
             onChangeText={setNota1}
+            testID='inputN1'
           />
 
           <Text style={Styles.textoNotas}>N2</Text>
@@ -74,6 +75,7 @@ export default function CalcSuperior(){
              placeholder='Digite a segunda nota'
              value={nota2}
              onChangeText={setNota2}
+             testID='inputN2'
           />
 
           <Text style={Styles.textoNotas}>FINAL</Text>
@@ -81,12 +83,14 @@ export default function CalcSuperior(){
              style={Styles.input}
              value={final}
              onChangeText={setFinal}
+             testID='inputFinal'
           />
 
           <View style={Styles.botoes}>
             <TouchableHighlight 
                 style={Styles.btCalcular}
                 onPress={() => Limpar()}
+                testID='btnLimpar'
               >
                 <Text style={Styles.textoBt}>Limpar</Text>
               </TouchableHighlight>
@@ -94,13 +98,14 @@ export default function CalcSuperior(){
               <TouchableHighlight 
                 style={Styles.btCalcular}
                 onPress={() => Calcular()}
+                testID='btnCalcular'
               >
                 <Text style={Styles.textoBt}>Calcular</Text>
               </TouchableHighlight>
 
             
           </View>
-          <Text style={Styles.resultado}>{resultado}</Text>
+          <Text style={Styles.resultado} testID='resultado'>{resultado}</Text>
         
         </View>
     </View>

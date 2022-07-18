@@ -56,6 +56,7 @@ exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
           "width": 200,
         }
       }
+      testID="inputN1"
       value=""
     />
     <Text
@@ -81,6 +82,7 @@ exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
           "width": 200,
         }
       }
+      testID="inputN2"
       value=""
     />
     <Text
@@ -105,6 +107,7 @@ exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
           "width": 200,
         }
       }
+      testID="inputFinal"
     />
     <View
       style={
@@ -133,6 +136,7 @@ exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
             "width": 120,
           }
         }
+        testID="btnLimpar"
       >
         <Text
           style={
@@ -167,6 +171,7 @@ exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
             "width": 120,
           }
         }
+        testID="btnCalcular"
       >
         <Text
           style={
@@ -192,6 +197,7 @@ exports[`Teste de snapshot Snapshot de tela CalcSuperior 1`] = `
           "textAlign": "center",
         }
       }
+      testID="resultado"
     />
   </View>
 </View>
