@@ -2,7 +2,7 @@ import renderer from 'react-test-renderer'
 import { render, fireEvent } from "@testing-library/react-native";
 import Home from '../../../components/Home';
 import App from '../../../App'
-// jest.mock("react-native/Libraries/Animated/NativeAnimatedHelper");
+jest.mock("react-native/Libraries/Animated/NativeAnimatedHelper");
 
 describe('Teste de snapshot', () => {
     it('Snapshot da tela Home', () => {

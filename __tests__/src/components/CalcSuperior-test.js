@@ -59,19 +59,22 @@ describe('Teste de componente tela cursos Superiores', () => {
         const inputN1 = getByTestId('inputN1')
         const inputN2 = getByTestId('inputN2')
         const inputFinal = getByTestId('inputFinal')
-function teste(){
-            if(inputN1.value == '70'){
-                inputN2.value == '53.33'
-                return true
-            }
-            return false
-        }
+
         const botao = getByTestId('btnCalcular')
         fireEvent.press(botao)
-
         
+        if(inputN1.value == '70'){
+            inputN2.value == '53.33'
+        }
+        expect(inputN2.value == '53.33').toBeDefined()
 
-        expect(teste()).toBeTruthy()
+        const botaoTest2 = getByTestId('btnCalcular')
+        fireEvent.press(botaoTest2)
+        
+        if(inputN1.value == '70' && inputN2.value == '52'){
+            inputFinal.value == '53.33'
+        }
+        expect(inputFinal.value == '53.33').toBeDefined()
 
     })
 })

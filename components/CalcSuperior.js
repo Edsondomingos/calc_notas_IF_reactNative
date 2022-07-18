@@ -28,7 +28,7 @@ export default function CalcSuperior(){
       if(finall > 20 && finall < 60){
         if(nota1 > nota2){
           finall = (((300 - (n1*2))/3))
-          setFinal(finall)
+          setFinal(finall.toFixed(2))
           setResultado(`
           Voce precisa tirar: \n ${finall.toFixed(2)} na prova final`)
         } else if(nota2 > nota1){
