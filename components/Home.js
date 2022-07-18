@@ -11,8 +11,7 @@ export default function Home(props){
       <TouchableHighlight
         style={Styles.opcao}
         onPress={() => props.navigation.navigate('CalcMedioTecnico')}
-        testID='btnTelaCalcMedio'
-      >
+        testID='btnTelaCalcMedio'>
         <Text style={Styles.textoOpcao}>Médio➗Técnico</Text>
         
       </TouchableHighlight>
@@ -20,16 +19,14 @@ export default function Home(props){
       <TouchableHighlight
         style={Styles.opcao}
         onPress={() => props.navigation.navigate('CalcSuperior')}
-        testID='btnTelaCalcSuperior'
-      >
+        testID='btnTelaCalcSuperior'>
         <Text style={Styles.textoOpcao}>➕Superior</Text>
       </TouchableHighlight>
       
       <TouchableHighlight
         style={Styles.opcao}
         onPress={() => props.navigation.navigate('Sobre')}
-        testID='btnTelaSobre'
-      >
+        testID='btnTelaSobre'>
         <Text style={Styles.textoOpcao}>❕Sobre</Text>
       </TouchableHighlight>
       
