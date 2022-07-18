@@ -19,7 +19,7 @@ describe("Teste de inicialização e Exibição", ()=>{
 
         expect(getByTestId("btn")).toBeTruthy();
         expect(getByTestId("btn1")).toBeTruthy();
-
+        expect(getByTestId("tete")).toBeTruthy();
         expect(getByText("N1")).toBeTruthy();
         expect(getByTestId("btn2")).toBeTruthy();
         expect(getByTestId("btn3")).toBeTruthy();
