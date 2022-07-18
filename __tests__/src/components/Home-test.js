@@ -15,7 +15,7 @@ describe('Teste de componentes tela Home', () => {
     it('Botão medio/tecnico', () => {
         const {getByText, getByTestId } = render(<App />)
 
-        const titulo = getByText('Calculadora de notas')
+        const titulo = getByText('Médio➗Técnico')
         expect(titulo).toBeTruthy()
 
         const botao = getByTestId('btnTelaCalcMedio')
