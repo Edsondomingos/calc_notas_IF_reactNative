@@ -236,7 +236,9 @@ exports[`Teste de Snapshot Snapshot de CalcMedio 1`] = `
             Limpar
           </Text>
         </View>
-        <Text />
+        <Text
+          testID="tete"
+        />
       </View>
     </View>
   </RCTScrollView>

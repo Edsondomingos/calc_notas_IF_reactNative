@@ -164,7 +164,7 @@ export default function CalcSuperior(){
             <Text style={Styles.textoBt}>Limpar</Text>
           </TouchableHighlight>
 
-          <Text>{resultado}</Text>
+          <Text testID='tete'>{resultado}</Text>
         
         </View>
         </ScrollView>

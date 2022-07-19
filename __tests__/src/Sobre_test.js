@@ -19,6 +19,7 @@ describe("Teste de inicialização e Exibição", ()=>{
 
         expect(getByText("Bem vindo a calculadora de notas do IFRN")).toBeTruthy();
         expect(getByTestId("btnview")).toBeTruthy();
+        expect(getByTestId("texto")).toBeTruthy();
         expect(getByTestId("btntext")).toBeTruthy();
         expect(getByTestId("btntext1")).toBeTruthy();
         expect(getByTestId("btntext2")).toBeTruthy();
